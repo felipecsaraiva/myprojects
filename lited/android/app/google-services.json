@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "888676874750",
+    "firebase_url": "https://lited-app.firebaseio.com",
+    "project_id": "lited-app",
+    "storage_bucket": "lited-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888676874750:android:67df59400e73e9c1",
+        "android_client_info": {
+          "package_name": "com.lited"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888676874750-9d7dmt0qdvjddl649bcfteo2el5o3id2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lited",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "888676874750-7e2q8m0hkhgtba4llejb95ob27sochec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPNWLCF3N_BOYUhP8tFBi0j8cIHpoC4p8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888676874750-7e2q8m0hkhgtba4llejb95ob27sochec.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
