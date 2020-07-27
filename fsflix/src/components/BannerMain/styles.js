@@ -16,7 +16,7 @@ export const ContentAreaContainer = styled.section`
 `;
 
 ContentAreaContainer.Item = styled.div`
-  width: 50%;
+  width: 100%;
   display: inline-block;
   margin-bottom: 50px;
   @media (max-width: 800px) {
@@ -100,7 +100,7 @@ export const BannerMainContainer = styled.section`
   }
 `;
 
-export const WatchButton = styled.button`
+export const WatchButton = styled.a`
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   cursor: pointer;
@@ -117,7 +117,6 @@ export const WatchButton = styled.button`
   background: var(--white);
   border-color: var(--black);
   transition: opacity .3s;
-  display: none;
   margin: 0 auto;
   @media (max-width: 800px) {
     display: block;
