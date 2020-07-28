@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function ButtonLink(props) {
     return (
-        <a className={props.className} href={props.link}>
+        <Link className={props.className} to={props.link}>
             {props.children}
-        </a>
+        </Link>
     );
 }
 
