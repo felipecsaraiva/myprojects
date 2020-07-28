@@ -5,9 +5,20 @@ import { Link } from 'react-router-dom';
 function CadastroCategoria() {
     return (
         <MasterPage>
-          <h1>Nova Categoria</h1>
-          <Link to="/cadastro/categoria">
-            Nova Categoria
+          <form>
+            <label>
+              Nome da Categoria:
+              <input
+                type="text"
+              />
+            </label>
+            <button>
+              Cadastrar
+            </button>
+          </form>
+
+          <Link to="/">
+          Ir para home
           </Link>
         </MasterPage>
     );
