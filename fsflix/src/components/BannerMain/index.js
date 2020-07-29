@@ -14,12 +14,14 @@ export default function BannerMain({
   videoTitle,
   videoDescription,
   url,
+  image,
+  download,
 }) {
   const youTubeID = getYouTubeId(url);
   const bgUrl = `https://img.youtube.com/vi/${youTubeID}/maxresdefault.jpg`;
 
   return (
-    <BannerMainContainer backgroundImage={bgUrl}>
+    <BannerMainContainer backgroundImage={image}>
       <ContentAreaContainer>
         <ContentAreaContainer.Item>
           <ContentAreaContainer.Title>
@@ -30,7 +32,11 @@ export default function BannerMain({
             {videoDescription}
           </ContentAreaContainer.Description>
           <WatchButton href={url}>
-            Assistir
+            Acessar
+          </WatchButton>
+
+          <WatchButton href={download}>
+            Download
           </WatchButton>
         </ContentAreaContainer.Item>
       </ContentAreaContainer>

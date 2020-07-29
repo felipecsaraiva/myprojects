@@ -6,11 +6,12 @@ import Slider, { SliderItem } from './Slider';
 function VideoCardGroup({
   ignoreFirstVideo,
   category,
+  dados,
 }) {
   const categoryTitle = category.titulo;
   const categoryColor = category.cor;
   const categoryExtraLink = category.link_extra;
-  const videos = category.videos;
+  const videos = dados.items;
   return (
     <VideoCardGroupContainer>
       {categoryTitle && (
@@ -32,11 +33,12 @@ function VideoCardGroup({
           }
 
           return (
-            <SliderItem key={video.titulo}>
+            <SliderItem key={video.title}>
               <VideoCard
-                videoTitle={video.titulo}
-                videoURL={video.url}
+                videoTitle={video.title}
+                videoURL={video.link}
                 categoryColor={categoryColor}
+                imgUrl={video.thumbnail}
               />
             </SliderItem>
           );

@@ -1,87 +1,25 @@
 {
   "categorias": [
     {
-      "titulo": "Meu Canal",
-      "link": "https://www.youtube.com/channel/UCclK7KWn5xYNJyylciEJ2cw",
-      "cor": "#6BD1FF",
-      "link_extra": {
-        "text": "Ver mais",
-        "url": "/"
-      },
-      "videos": [
-        {
-          "titulo": "Caiu um Meteoro na minha Vila!",
-          "url": "https://www.youtube.com/watch?v=bxXPrBaYrUM"
-        },
-        {
-          "titulo": "Caiu um Meteoro na minha Vila!",
-          "url": "https://www.youtube.com/watch?v=bxXPrBaYrUM"
-        },
-        {
-          "titulo": "Caiu um Meteoro na minha Vila!",
-          "url": "https://www.youtube.com/watch?v=bxXPrBaYrUM"
-        },
-        {
-          "titulo": "Caiu um Meteoro na minha Vila!",
-          "url": "https://www.youtube.com/watch?v=bxXPrBaYrUM"
-        } 
-      ]
+      "titulo": "Portal Deviante",
+      "link": "https://www.deviante.com.br",
+      "cor": "#f79328"
     },
     {
-      "titulo": "Canais que eu Curto",
-      "cor": "#00C86F",
+      "titulo": "RPGuaxa",
+      "cor": "#87e32a",
       "link_extra": {
         "text": "Ver todos",
-        "url": "/"
-      },
-      "videos": [
-        {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
-        },
-        {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
-        },
-        {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
-        },
-        {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
-        }, 
-        {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
-        }
-      ]
+        "url": "https://www.deviante.com.br/podcasts/rpguaxa/"
+      }
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
-      "cor": "#9cd33b",
+      "titulo": "SciCast",
+      "cor": "#3366CC",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
-      },
-      "videos": [
-        {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
-        },
-        {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
-        },
-        {
-          "titulo": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
-        },
-        {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
-        }
-      ]
+        "text": "Ver todos",
+        "url": "https://www.deviante.com.br/podcasts/scicast/"
+      }
     },
     {
       "titulo": "Filmes",
