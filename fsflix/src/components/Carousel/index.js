@@ -3,10 +3,11 @@ import { VideoCardGroupContainer, Title, ExtraLink } from './styles';
 import VideoCard from './components/VideoCard';
 import Slider, { SliderItem } from './Slider';
 
-function VideoCardGroup({
+function Carousel({
   ignoreFirstVideo,
   category,
   dados,
+  onClick,
 }) {
   const categoryTitle = category.titulo;
   const categoryColor = category.cor;
@@ -27,6 +28,7 @@ function VideoCardGroup({
         </>
       )}
       <Slider>
+        {console.log(videos)}
         {videos.map((video, index) => {
           if (ignoreFirstVideo && index === 0) {
             return null;
@@ -40,6 +42,7 @@ function VideoCardGroup({
                 categoryColor={categoryColor}
                 imgUrl={video.thumbnail}
               />
+              <button onClick={onClick(video.enclosure.link)}>Ouvir</button>
             </SliderItem>
           );
         })}
@@ -48,4 +51,4 @@ function VideoCardGroup({
   );
 }
 
-export default VideoCardGroup;
+export default Carousel;
