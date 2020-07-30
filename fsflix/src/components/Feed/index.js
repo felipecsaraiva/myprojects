@@ -38,7 +38,7 @@ export default class Feed extends Component {
                     console.log(error.response.data);
                     console.log(error.response.status);
                     console.log(error.response.headers);
-                    if (error.response.status = '500') {
+                    if (error.response.status === '500') {
                         this.setState({message:'Não existem dados a serem exibidos'});
                     }
                 } else if (error.request) {
@@ -75,7 +75,7 @@ export default class Feed extends Component {
                     console.log(error.response.data);
                     console.log(error.response.status);
                     console.log(error.response.headers);
-                    if (error.response.status = '500') {
+                    if (error.response.status === '500') {
                         this.setState({message:'Não existem dados a serem exibidos'});
                     }
                 } else if (error.request) {
@@ -112,7 +112,7 @@ export default class Feed extends Component {
                     console.log(error.response.data);
                     console.log(error.response.status);
                     console.log(error.response.headers);
-                    if (error.response.status = '500') {
+                    if (error.response.status === '500') {
                         this.setState({message:'Não existem dados a serem exibidos'});
                     }
                 } else if (error.request) {

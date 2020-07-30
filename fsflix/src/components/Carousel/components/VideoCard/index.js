@@ -1,13 +1,13 @@
 import React from 'react';
 import { VideoCardContainer } from './styles';
 
-function getYouTubeId(youtubeURL) {
-  return youtubeURL
-    .replace(
-      /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/,
-      '$7',
-    );
-}
+//function getYouTubeId(youtubeURL) {
+//  return youtubeURL
+//    .replace(
+//      /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/,
+//      '$7',
+//    );
+//}
 
 
 function VideoCard({ videoTitle, videoURL, categoryColor, imgUrl }) {
