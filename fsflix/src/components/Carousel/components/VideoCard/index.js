@@ -13,13 +13,15 @@ import { VideoCardContainer } from './styles';
 function VideoCard({ videoTitle, videoURL, categoryColor, imgUrl }) {
   const image = imgUrl;
   return (
-    <VideoCardContainer
-      url={image}
-      href={videoURL}
-      target="_blank"
-      style={{ borderColor: categoryColor || 'red' }}
-      title={videoTitle}
-    />
+    <>
+      <VideoCardContainer
+        url={image}
+        href={videoURL}
+        target="_blank"
+        style={{ borderColor: categoryColor || 'red' }}
+        title={videoTitle}
+      />
+    </>
   );
 }
 

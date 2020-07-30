@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactAudioPlayer from 'react-audio-player';
 import { BannerMainContainer, ContentAreaContainer, WatchButton } from './styles';
 
 //function getYouTubeId(youtubeURL) {
@@ -30,13 +31,17 @@ export default function BannerMain({
           <ContentAreaContainer.Description>
             {videoDescription}
           </ContentAreaContainer.Description>
-          <WatchButton href={url}>
-            Acessar
-          </WatchButton>
-
-          <WatchButton href={download}>
-            Download
-          </WatchButton>
+          <ReactAudioPlayer
+            src={download}
+            autoPlay
+            controls
+          />
+          <br/>
+          <div>
+            <WatchButton href={url}>
+              Acessar
+            </WatchButton>
+          </div>
         </ContentAreaContainer.Item>
       </ContentAreaContainer>
     </BannerMainContainer>
