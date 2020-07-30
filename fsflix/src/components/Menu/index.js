@@ -6,6 +6,10 @@ import { Link } from 'react-router-dom';
 
 function Menu() {
     return (
+        <>
+        <div className="Player">
+            Aqui vai ter que aparecero player
+        </div>
         <nav className="Menu">
             <Link to="/">
                 <img className="Logo" src={Logo} alt="FsFlix"/>
@@ -14,6 +18,8 @@ function Menu() {
                 Novo Video
             </ButtonLink>
         </nav>
+        
+        </>
     );
 }
 
