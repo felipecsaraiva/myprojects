@@ -10,7 +10,7 @@ import { VideoCardContainer } from './styles';
 //}
 
 
-function VideoCard({ videoTitle, videoURL, categoryColor, imgUrl }) {
+function VideoCard({ videoTitle, videoURL, categoryColor, imgUrl,onClick }) {
   const image = imgUrl;
   return (
     <>
@@ -20,6 +20,7 @@ function VideoCard({ videoTitle, videoURL, categoryColor, imgUrl }) {
         target="_blank"
         style={{ borderColor: categoryColor || 'red' }}
         title={videoTitle}
+        onClick={onClick}
       />
     </>
   );

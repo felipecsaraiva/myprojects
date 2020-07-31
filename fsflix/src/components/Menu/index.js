@@ -3,7 +3,6 @@ import Logo from '../../assets/img/logo.png';
 import './menu.css';
 import ButtonLink from '../Button';
 import { Link } from 'react-router-dom';
-import ReactAudioPlayer from 'react-audio-player';
 
 function Menu() {
     return (

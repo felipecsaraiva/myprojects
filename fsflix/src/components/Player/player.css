@@ -1,0 +1,22 @@
+.audioPlayer{
+    
+}
+.Player {
+width: calc(100vw - 105px);
+height: 80px;
+z-index: 100;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+float: left;
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+padding-left: 5%;
+padding-right: 5%;
+color: var(--white);
+background: #000000;
+}
