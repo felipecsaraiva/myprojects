@@ -21,7 +21,9 @@ function VideoCard({ videoTitle, videoURL, categoryColor, imgUrl,onClick }) {
         style={{ borderColor: categoryColor || 'red' }}
         title={videoTitle}
         onClick={onClick}
-      />
+      >
+        <div style={{background:'rgba(0, 0, 0, 0.5)',color:'#FCFCFC',padding:'5px'}}> {videoTitle} </div>
+      </VideoCardContainer>
     </>
   );
 }

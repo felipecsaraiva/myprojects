@@ -1,7 +1,7 @@
 import React from "react";
 
 function FormField({ label, type, name, value, onChange }) {
-  if (type=="textarea") {
+  if (type==="textarea") {
       return (
         <div>
         <label>

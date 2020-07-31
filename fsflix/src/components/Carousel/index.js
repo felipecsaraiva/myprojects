@@ -7,12 +7,12 @@ import './fechar.css';
 
 function Carousel({
   ignoreFirstVideo,
-  category,
+  color,
   dados,
 }) {
-  const categoryTitle = category.titulo;
-  const categoryColor = category.cor;
-  const categoryExtraLink = category.link_extra;
+  const categoryTitle = dados.feed.title;
+  const categoryColor = color;
+  const categoryExtraLink = dados.feed.link;
   const videos = dados.items;
   const [showPlayer,setShowPlayer] = useState(false);
   const [Video,setVideo] = useState({});
@@ -32,7 +32,6 @@ function Carousel({
         </>
       )}
       <Slider>
-        {console.log(videos)}
         {videos.map((video, index) => {
           if (ignoreFirstVideo && index === 0) {
             return null;
@@ -42,7 +41,7 @@ function Carousel({
             <SliderItem key={video.title}>
               <VideoCard
                 videoTitle={video.title}
-                videoURL={''}
+                videoURL={'/'}
                 categoryColor={categoryColor}
                 imgUrl={video.thumbnail}
                 onClick={function handleClick(e) {    
@@ -62,7 +61,7 @@ function Carousel({
           title={Video.title}
         />
         <div className="Fechar">
-          <a onClick={function handleCloseClick(e){
+          <a href="/" onClick={function handleCloseClick(e){
             e.preventDefault();
             setShowPlayer(false);
           }}>Fechar</a>

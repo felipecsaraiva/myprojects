@@ -1,9 +1,9 @@
 .Logo {
-    max-width: 168px;
+    max-width: 148px;
   }
   @media (max-width: 800px) {
     .Logo {
-      max-width: 105px;
+      max-width: 85px;
     }
   }
   
@@ -31,7 +31,7 @@
   }
   @media (max-width: 800px) {
     .Menu {
-      height: 40px;
+      height: 50px;
       justify-content: center;
     }
     body {

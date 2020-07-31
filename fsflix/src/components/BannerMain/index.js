@@ -33,7 +33,7 @@ export default function BannerMain({
           </ContentAreaContainer.Description>
           <ReactAudioPlayer
             src={download}
-            autoPlay
+            autoPlay={false}
             controls
           />
           <br/>

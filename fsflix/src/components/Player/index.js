@@ -8,7 +8,7 @@ function Player({url,title}){
             <p>{title}</p>
             <div>
                 <ReactAudioPlayer
-                    src={url.url}
+                    src={url}
                     autoPlay
                     controls
                     className="audioPlayer"

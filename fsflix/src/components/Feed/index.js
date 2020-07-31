@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import dadosIniciais from '../../data/dados_iniciais.json';
 import BannerMain from '../BannerMain';
 import Carousel from '../Carousel';
+import './feed.css';
 
-function Feed() {
+function Feed(
+    {url,isBanner,color}
+) {
     const defaultValues = {
         data: {
             items:[],
@@ -12,10 +14,10 @@ function Feed() {
         loaded: false,
     }
     const [values,SetValues] = useState(defaultValues);
-
+    
     useEffect(() => {
         async function fetchData() {
-            await axios.get('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.deviante.com.br%2Fpodcasts%2Ffeed%2F&api_key=p2jqpogegcl6bvoye3cqjuhcefbbbrfhcpramejj&count=50')
+            await axios.get(url)
             .then((response) => {
                 
                 SetValues({
@@ -29,14 +31,14 @@ function Feed() {
 
     if (!values.loaded)
         return (
-            <>
-            <h1>{'Carregando...'}</h1>
-            </>
+            <div className="load">
+                <h1>{'Carregando...'}</h1>
+            </div>
         )
 
     return (
         <>
-        {values.data.items.length > 0 && (
+        {isBanner & values.data.items.length > 0 && (
             <BannerMain
                 videoTitle={values.data.items[0].title}
                 url={values.data.items[0].link}
@@ -48,8 +50,8 @@ function Feed() {
 
         {values.data.items.length > 0 && (
             <Carousel
-                category={dadosIniciais.categorias[0]}
                 dados={values.data}
+                color={color}
             />
         )}
         </>            
